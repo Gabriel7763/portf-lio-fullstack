@@ -8,7 +8,7 @@ msgstr ""
 "Language: pt\n"
 "Project-Id-Version: portfolio-fullstack\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-09-02 17:58\n"
+"PO-Revision-Date: 2026-09-02 19:22\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese, Brazilian\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -287,275 +287,275 @@ msgstr "Banco de Dados e Cache"
 
 #: src/components/About.tsx:50
 msgid "Databases & Caching"
-msgstr ""
+msgstr "Bancos de dados & Caching"
 
 #: src/components/About.tsx:30
 msgid "Deep mastery of React, Next.js 15, TypeScript, state management, and accessible Design Systems."
-msgstr ""
+msgstr "Domínio profundo de React, Next.js 15, TypeScript, gerenciamento de estado e sistemas de design acessíveis."
 
 #. Developer variable name in code
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:303
 msgid "hero.code.developer"
-msgstr ""
+msgstr "hero.code.developer"
 
 #. Filename in code preview
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:281
 msgid "hero.code.fileName"
-msgstr ""
+msgstr "hero.code.fileName"
 
 #: src/components/TechStack.tsx:79
 msgid "DevOps & Cloud"
-msgstr ""
+msgstr "DevOps & Cloud"
 
 #. Label for devops layer in architecture
 #. js-lingui-explicit-id
 #: src/components/ProjectModal.tsx:180
 msgid "projectModal.architecture.devops"
-msgstr ""
+msgstr "projectModal.architecture.devops"
 
 #. Title for direct contact channels section
 #. js-lingui-explicit-id
 #: src/components/Contact.tsx:104
 msgid "contact.directChannels.title"
-msgstr ""
+msgstr "contact.directChannels.title"
 
 #. Label for direct email channel
 #. js-lingui-explicit-id
 #: src/components/Contact.tsx:117
 msgid "contact.directChannels.email.label"
-msgstr ""
+msgstr "contact.directChannels.email.label"
 
 #: src/components/Hero.tsx:45
 msgid "Distributed Systems Specialist"
-msgstr ""
+msgstr "Distributed Systems Specialist"
 
 #. Value for Cloud & Containerization skill
 #. js-lingui-explicit-id
 #: src/components/About.tsx:221
 msgid "about.skills.cloud.value"
-msgstr ""
+msgstr "about.skills.cloud.value"
 
 #. Tab label for education and certifications section
 #. js-lingui-explicit-id
 #: src/components/Experience.tsx:73
 msgid "experience.tab.education"
-msgstr ""
+msgstr "experience.tab.education"
 
 #: src/components/Footer.tsx:62
 #: src/components/Hero.tsx:251
 msgid "Email"
-msgstr ""
+msgstr "E-mail"
 
 #. Label for email input field
 #. js-lingui-explicit-id
 #: src/components/Contact.tsx:288
 msgid "contact.form.email.label"
-msgstr ""
+msgstr "contact.form.email.label"
 
 #. Subtitle describing endorsements section
 #. js-lingui-explicit-id
 #: src/components/Experience.tsx:236
 msgid "experience.testimonials.subtitle"
-msgstr ""
+msgstr "experience.testimonials.subtitle"
 
 #. Title for engineered solution section
 #. js-lingui-explicit-id
 #: src/components/ProjectModal.tsx:206
 msgid "projectModal.solution.title"
-msgstr ""
+msgstr "projectModal.solution.title"
 
 #. Subtitle describing the section content
 #. js-lingui-explicit-id
 #: src/components/Experience.tsx:39
 msgid "experience.subtitle"
-msgstr ""
+msgstr "experience.subtitle"
 
 #. Badge label for engineering pillars section
 #. js-lingui-explicit-id
 #: src/components/About.tsx:111
 msgid "about.badge"
-msgstr ""
+msgstr "about.badge"
 
 #: src/components/About.tsx:82
 msgid "Event-Driven Microservices & Queues"
-msgstr ""
+msgstr "Microserviços e Filas Orientados a Evento"
 
 #: src/components/Navbar.tsx:57
 msgid "Experience"
-msgstr ""
+msgstr "Experiência"
 
 #. Featured badge label
 #. js-lingui-explicit-id
 #: src/components/ProjectModal.tsx:66
 msgid "projectModal.featured"
-msgstr ""
+msgstr "projectModal.featured"
 
 #. Featured badge label
 #. js-lingui-explicit-id
 #: src/components/Projects.tsx:138
 msgid "projects.featured"
-msgstr ""
+msgstr "projects.featured"
 
 #. Badge label for featured portfolio section
 #. js-lingui-explicit-id
 #: src/components/Projects.tsx:65
 msgid "projects.badge"
-msgstr ""
+msgstr "projects.badge"
 
 #: src/components/Projects.tsx:30
 #: src/components/TechStack.tsx:67
 msgid "Frontend"
-msgstr ""
+msgstr "Frontend"
 
 #. Label for frontend layer in architecture
 #. js-lingui-explicit-id
 #: src/components/ProjectModal.tsx:150
 msgid "projectModal.architecture.frontend"
-msgstr ""
+msgstr "projectModal.architecture.frontend"
 
 #. Label for Frontend Performance skill
 #. js-lingui-explicit-id
 #: src/components/About.tsx:189
 msgid "about.skills.frontendPerformance.label"
-msgstr ""
+msgstr "about.skills.frontendPerformance.label"
 
 #. Frontend property in code
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:339
 msgid "hero.code.frontend"
-msgstr ""
+msgstr "hero.code.frontend"
 
 #: src/components/Projects.tsx:26
 msgid "Fullstack"
-msgstr ""
+msgstr "Fullstack"
 
 #. Button text to get in touch
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:196
 msgid "hero.cta.contact"
-msgstr ""
+msgstr "hero.cta.contact"
 
 #. Main title for contact section
 #. js-lingui-explicit-id
 #: src/components/Contact.tsx:84
 msgid "contact.title"
-msgstr ""
+msgstr "contact.title"
 
 #. Label for GitHub contributions stat
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:449
 msgid "hero.stats.contributions"
-msgstr ""
+msgstr "hero.stats.contributions"
 
 #: src/components/Footer.tsx:38
 #: src/components/Hero.tsx:229
 msgid "GitHub"
-msgstr ""
+msgstr "GitHub"
 
 #. Subtitle describing how to reach out for projects and roles
 #. js-lingui-explicit-id
 #: src/components/Contact.tsx:89
 msgid "contact.subtitle"
-msgstr ""
+msgstr "contact.subtitle"
 
 #. Greeting text before the name
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:128
 msgid "hero.greeting"
-msgstr ""
+msgstr "hero.greeting"
 
 #: src/components/Contact.tsx:339
 msgid "Hi Lucas, let's talk about our new cloud architecture..."
-msgstr ""
+msgstr "Oi, Lucas, vamos falar sobre nossa nova arquitetura em nuvem..."
 
 #. High Performance status for UI/UX
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:406
 msgid "hero.micro.highPerformance"
-msgstr ""
+msgstr "hero.micro.highPerformance"
 
 #. Value for Backend Resilience skill
 #. js-lingui-explicit-id
 #: src/components/About.tsx:207
 msgid "about.skills.backendResilience.value"
-msgstr ""
+msgstr "about.skills.backendResilience.value"
 
 #. Prefix before the dynamic role text
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:142
 msgid "hero.iam"
-msgstr ""
+msgstr "hero.iam"
 
 #: src/components/Contact.tsx:277
 msgid "John Doe"
-msgstr ""
+msgstr "João da Silva"
 
 #: src/components/Contact.tsx:298
 msgid "john@example.com"
-msgstr ""
+msgstr "john@example.com"
 
 #. Label for key accomplishments section
 #. js-lingui-explicit-id
 #: src/components/Experience.tsx:143
 msgid "experience.achievements.label"
-msgstr ""
+msgstr "experience.achievements.label"
 
 #. Badge label for contact section, inviting collaboration
 #. js-lingui-explicit-id
 #: src/components/Contact.tsx:79
 msgid "contact.badge"
-msgstr ""
+msgstr "contact.badge"
 
 #. Button text for hiring CTA
 #. js-lingui-explicit-id
 #: src/components/Navbar.tsx:155
 msgid "navbar.cta.letsTalk"
-msgstr ""
+msgstr "navbar.cta.letsTalk"
 
 #. Button text for hiring CTA in mobile menu
 #. js-lingui-explicit-id
 #: src/components/Navbar.tsx:233
 msgid "navbar.mobile.cta.letsTalk"
-msgstr ""
+msgstr "navbar.mobile.cta.letsTalk"
 
 #: src/components/Footer.tsx:51
 #: src/components/Hero.tsx:241
 msgid "LinkedIn"
-msgstr ""
+msgstr "LinkedIn"
 
 #: src/components/Projects.tsx:217
 msgid "Live Demo"
-msgstr ""
+msgstr "Demonstração ao vivo"
 
 #. Label for location and timezone information
 #. js-lingui-explicit-id
 #: src/components/Contact.tsx:172
 msgid "contact.directChannels.location.label"
-msgstr ""
+msgstr "contact.directChannels.location.label"
 
 #. Location property in code
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:331
 msgid "hero.code.location"
-msgstr ""
+msgstr "hero.code.location"
 
 #. Label for message textarea
 #. js-lingui-explicit-id
 #: src/components/Contact.tsx:329
 msgid "contact.form.message.label"
-msgstr ""
+msgstr "contact.form.message.label"
 
 #. Success title after message submission
 #. js-lingui-explicit-id
 #: src/components/Contact.tsx:236
 msgid "contact.form.success.title"
-msgstr ""
+msgstr "contact.form.success.title"
 
 #: src/components/About.tsx:26
 msgid "Modern Frontend"
-msgstr ""
+msgstr "Frontend Moderno"
 
 #. Name property in code
 #. js-lingui-explicit-id
