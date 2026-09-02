@@ -8,7 +8,7 @@ msgstr ""
 "Language: pt\n"
 "Project-Id-Version: portfolio-fullstack\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-09-02 21:33\n"
+"PO-Revision-Date: 2026-09-02 22:43\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese, Brazilian\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -210,7 +210,7 @@ msgstr "about.skills.cloud.label"
 
 #: src/components/About.tsx:62
 msgid "Cloud & DevOps"
-msgstr "Nuvem e DevOps"
+msgstr "Cloud e DevOps"
 
 #. Label before social media links
 #. js-lingui-explicit-id
