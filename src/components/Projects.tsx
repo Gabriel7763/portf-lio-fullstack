@@ -10,6 +10,8 @@ import {
 import { Project, ProjectCategory } from '../types';
 import { projectsData } from '../data/portfolioData';
 import { ProjectModal } from './ProjectModal';
+import { Trans } from '@lingui/react/macro';
+import { t } from '@lingui/core/macro';
 
 export const Projects: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<ProjectCategory>('all');
@@ -17,11 +19,26 @@ export const Projects: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const categories: { id: ProjectCategory; label: string }[] = [
-    { id: 'all', label: 'All Projects' },
-    { id: 'fullstack', label: 'Fullstack' },
-    { id: 'frontend', label: 'Frontend' },
-    { id: 'backend', label: 'Backend & APIs' },
-    { id: 'ai_cloud', label: 'AI & Cloud' }
+    { id: 'all', label: t({
+      id: "projects.categories.all",
+      comment: "Category filter option to show all projects"
+    })`All Projects` },
+    { id: 'fullstack', label: t({
+      id: "projects.categories.fullstack",
+      comment: "Category filter option for Fullstack projects"
+    })`Fullstack` },
+    { id: 'frontend', label: t({
+      id: "projects.categories.frontend",
+      comment: "Category filter option for Frontend projects"
+    })`Frontend` },
+    { id: 'backend', label: t({
+      id: "projects.categories.backend",
+      comment: "Category filter option for Backend & APIs projects"
+    })`Backend & APIs` },
+    { id: 'ai_cloud', label: t({
+      id: "projects.categories.aiCloud",
+      comment: "Category filter option for AI & Cloud projects"
+    })`AI & Cloud` }
   ];
 
   const filteredProjects = useMemo(() => {
@@ -45,13 +62,19 @@ export const Projects: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-14">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium text-indigo-400 bg-indigo-950/60 border border-indigo-800/40">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Featured Portfolio</span>
+            <Trans id="projects.badge" comment="Badge label for featured portfolio section">
+              Featured Portfolio
+            </Trans>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Selected Works & Systems
+            <Trans id="projects.title" comment="Main title for projects section">
+              Selected Works & Systems
+            </Trans>
           </h2>
           <p className="text-slate-400 text-base sm:text-lg">
-            Production-tested architectures, SaaS platforms, and distributed systems.
+            <Trans id="projects.subtitle" comment="Subtitle describing the projects section">
+              Production-tested architectures, SaaS platforms, and distributed systems.
+            </Trans>
           </p>
         </div>
 
@@ -91,7 +114,11 @@ export const Projects: React.FC = () => {
                 <div className="relative aspect-video w-full overflow-hidden bg-slate-950">
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt={t({
+                      id: "projects.image.alt",
+                      comment: "Alt text for project image, {title} is the project name",
+                      title: project.title
+                    })`Screenshot of {title} project`}
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"
                   />
@@ -108,7 +135,9 @@ export const Projects: React.FC = () => {
                     {project.featured && (
                       <span className="text-[11px] font-mono px-2.5 py-1 rounded-md bg-amber-950/90 text-amber-300 border border-amber-800/60 backdrop-blur-md flex items-center gap-1 font-semibold">
                         <Flame className="w-3.5 h-3.5 text-amber-400" />
-                        Featured
+                        <Trans id="projects.featured" comment="Featured badge label">
+                          Featured
+                        </Trans>
                       </span>
                     )}
                   </div>
@@ -163,7 +192,9 @@ export const Projects: React.FC = () => {
                   className="flex items-center gap-1.5 text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition-colors cursor-pointer py-2"
                 >
                   <Eye className="w-3.5 h-3.5" />
-                  <span>Architecture Deep Dive</span>
+                  <Trans id="projects.card.details" comment="Button text to view architecture details">
+                    Architecture Deep Dive
+                  </Trans>
                 </button>
 
                 <div className="flex items-center gap-2">
@@ -171,7 +202,10 @@ export const Projects: React.FC = () => {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noreferrer"
-                    title="Source Code"
+                    title={t({
+                      id: "projects.social.github",
+                      comment: "Tooltip for GitHub source code link"
+                    })`Source Code`}
                     className="p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-400 hover:text-white hover:border-slate-700 transition-colors cursor-pointer"
                   >
                     <Github className="w-4 h-4" />
@@ -180,7 +214,10 @@ export const Projects: React.FC = () => {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noreferrer"
-                    title="Live Demo"
+                    title={t({
+                      id: "projects.social.liveDemo",
+                      comment: "Tooltip for Live Demo link"
+                    })`Live Demo`}
                     className="p-2 rounded-lg bg-indigo-600/20 border border-indigo-500/30 text-indigo-400 hover:bg-indigo-600 hover:text-white transition-all cursor-pointer"
                   >
                     <ExternalLink className="w-4 h-4" />

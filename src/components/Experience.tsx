@@ -9,6 +9,8 @@ import {
   Building2
 } from 'lucide-react';
 import { experiencesData, educationData, testimonialsData } from '../data/portfolioData';
+import { Trans } from '@lingui/react/macro';
+import { t, plural } from '@lingui/core/macro';
 
 export const Experience: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'work' | 'education'>('work');
@@ -24,13 +26,19 @@ export const Experience: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-12">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium text-indigo-400 bg-indigo-950/60 border border-indigo-800/40">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Career & Education</span>
+            <Trans id="experience.badge" comment="Badge label for career and education section">
+              Career & Education
+            </Trans>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Professional Trajectory
+            <Trans id="experience.title" comment="Main title for professional trajectory section">
+              Professional Trajectory
+            </Trans>
           </h2>
           <p className="text-slate-400 text-base sm:text-lg">
-            Engineering leadership, software development, and academic background.
+            <Trans id="experience.subtitle" comment="Subtitle describing the section content">
+              Engineering leadership, software development, and academic background.
+            </Trans>
           </p>
         </div>
 
@@ -47,7 +55,9 @@ export const Experience: React.FC = () => {
               }`}
             >
               <Briefcase className="w-4 h-4" />
-              <span>Work Experience</span>
+              <Trans id="experience.tab.work" comment="Tab label for work experience section">
+                Work Experience
+              </Trans>
             </button>
 
             <button
@@ -60,7 +70,9 @@ export const Experience: React.FC = () => {
               }`}
             >
               <GraduationCap className="w-4 h-4" />
-              <span>Education & Certs</span>
+              <Trans id="experience.tab.education" comment="Tab label for education and certifications section">
+                Education & Certs
+              </Trans>
             </button>
           </div>
         </div>
@@ -128,7 +140,9 @@ export const Experience: React.FC = () => {
                         {/* Key Achievements */}
                         <div className="space-y-2 pt-2 border-t border-slate-800/60">
                           <p className="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold">
-                            Key Accomplishments
+                            <Trans id="experience.achievements.label" comment="Label for key accomplishments section">
+                              Key Accomplishments
+                            </Trans>
                           </p>
                           <ul className="space-y-1.5">
                             {exp.achievements.map((item, i) => (
@@ -209,13 +223,19 @@ export const Experience: React.FC = () => {
           <div className="text-center max-w-2xl mx-auto space-y-2 mb-12">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium text-amber-400 bg-amber-950/60 border border-amber-800/40">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Recommendations</span>
+              <Trans id="experience.testimonials.badge" comment="Badge label for recommendations section">
+                Recommendations
+              </Trans>
             </div>
             <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
-              What Colleagues & Leaders Say
+              <Trans id="experience.testimonials.title" comment="Title for what colleagues and leaders say section">
+                What Colleagues & Leaders Say
+              </Trans>
             </h3>
             <p className="text-slate-400 text-sm">
-              Endorsements on technical craftsmanship, delivery reliability, and architectural vision.
+              <Trans id="experience.testimonials.subtitle" comment="Subtitle describing endorsements section">
+                Endorsements on technical craftsmanship, delivery reliability, and architectural vision.
+              </Trans>
             </p>
           </div>
 
@@ -232,7 +252,11 @@ export const Experience: React.FC = () => {
                 <div className="flex items-center gap-3 pt-3 border-t border-slate-800/60">
                   <img
                     src={test.avatar}
-                    alt={test.name}
+                    alt={t({
+                      id: "experience.testimonials.avatar.alt",
+                      comment: "Alt text for testimonial author avatar image",
+                      name: test.name
+                    })`Avatar of {name}`}
                     referrerPolicy="no-referrer"
                     className="w-10 h-10 rounded-full object-cover border border-slate-700"
                   />

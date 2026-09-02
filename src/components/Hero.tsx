@@ -11,6 +11,8 @@ import {
   FileText
 } from 'lucide-react';
 import { UserProfile } from '../types';
+import { Trans } from '@lingui/react/macro';
+import { t } from '@lingui/core/macro';
 
 interface HeroProps {
   profile: UserProfile;
@@ -28,10 +30,22 @@ export const Hero: React.FC<HeroProps> = ({
   const [isDeleting, setIsDeleting] = useState(false);
 
   const roles = [
-    'Senior Fullstack Engineer',
-    'React & Next.js Architect',
-    'Node.js & Cloud Developer',
-    'Distributed Systems Specialist'
+    t({
+      id: "hero.roles.seniorFullstack",
+      comment: "Role title: Senior Fullstack Engineer"
+    })`Senior Fullstack Engineer`,
+    t({
+      id: "hero.roles.reactArchitect",
+      comment: "Role title: React & Next.js Architect"
+    })`React & Next.js Architect`,
+    t({
+      id: "hero.roles.nodeCloud",
+      comment: "Role title: Node.js & Cloud Developer"
+    })`Node.js & Cloud Developer`,
+    t({
+      id: "hero.roles.distributedSystems",
+      comment: "Role title: Distributed Systems Specialist"
+    })`Distributed Systems Specialist`
   ];
 
   // Typing effect for roles
@@ -103,13 +117,17 @@ export const Hero: React.FC<HeroProps> = ({
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
               </span>
-              <span>Available for new projects & opportunities</span>
+              <Trans id="hero.availability" comment="Status badge showing availability for new projects">
+                Available for new projects & opportunities
+              </Trans>
             </div>
 
             {/* Main Heading */}
             <div className="space-y-3">
               <p className="text-slate-400 font-mono text-sm sm:text-base font-medium">
-                Hello, I'm
+                <Trans id="hero.greeting" comment="Greeting text before the name">
+                  Hello, I'm
+                </Trans>
               </p>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white">
                 <span className="bg-gradient-to-r from-white via-slate-100 to-slate-400 bg-clip-text text-transparent">
@@ -121,7 +139,9 @@ export const Hero: React.FC<HeroProps> = ({
               <div className="h-10 sm:h-12 flex items-center justify-center lg:justify-start">
                 <p className="text-xl sm:text-2xl lg:text-3xl font-bold font-mono text-indigo-400">
                   <span className="text-slate-400 font-sans font-normal text-lg sm:text-xl mr-2">
-                    I am a
+                    <Trans id="hero.iam" comment="Prefix before the dynamic role text">
+                      I am a
+                    </Trans>
                   </span>
                   <span>{displayedText}</span>
                   <span className="inline-block w-0.5 h-6 sm:h-7 bg-indigo-400 ml-1 animate-pulse align-middle" />
@@ -138,7 +158,9 @@ export const Hero: React.FC<HeroProps> = ({
             <div className="pt-1">
               <p className="text-xs font-mono uppercase tracking-wider text-slate-400 mb-3 flex items-center justify-center lg:justify-start gap-2">
                 <Code2 className="w-3.5 h-3.5 text-indigo-400" />
-                <span>Core Stack</span>
+                <Trans id="hero.coreStack" comment="Label for core tech stack section">
+                  Core Stack
+                </Trans>
               </p>
               <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
                 {techBadges.map((tech) => (
@@ -159,7 +181,9 @@ export const Hero: React.FC<HeroProps> = ({
                 onClick={onOpenProjects}
                 className="group flex items-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm text-white bg-indigo-600 hover:bg-indigo-500 shadow-lg shadow-indigo-600/30 hover:shadow-indigo-600/50 transition-all cursor-pointer"
               >
-                <span>View Featured Projects</span>
+                <Trans id="hero.cta.projects" comment="Button text to view featured projects">
+                  View Featured Projects
+                </Trans>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </button>
 
@@ -169,7 +193,9 @@ export const Hero: React.FC<HeroProps> = ({
                 className="flex items-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm text-slate-200 bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 hover:border-slate-600 transition-all cursor-pointer shadow-sm"
               >
                 <Mail className="w-4 h-4 text-indigo-400" />
-                <span>Get in Touch</span>
+                <Trans id="hero.cta.contact" comment="Button text to get in touch">
+                  Get in Touch
+                </Trans>
               </button>
 
               <a
@@ -182,19 +208,28 @@ export const Hero: React.FC<HeroProps> = ({
                 className="flex items-center gap-2 px-4 py-3.5 rounded-xl font-medium text-sm text-slate-300 hover:text-white bg-slate-900/40 hover:bg-slate-900 border border-slate-800/80 transition-all cursor-pointer"
               >
                 <FileText className="w-4 h-4 text-emerald-400" />
-                <span>Career History</span>
+                <Trans id="hero.cta.career" comment="Button text to view career history">
+                  Career History
+                </Trans>
               </a>
             </div>
 
             {/* Social Links */}
             <div className="flex items-center gap-4 justify-center lg:justify-start pt-3 text-slate-400">
-              <span className="text-xs font-mono text-slate-400">Connect:</span>
+              <span className="text-xs font-mono text-slate-400">
+                <Trans id="hero.connect" comment="Label before social media links">
+                  Connect:
+                </Trans>
+              </span>
               <div className="flex items-center gap-2">
                 <a
                   href={profile.github}
                   target="_blank"
                   rel="noreferrer"
-                  title="GitHub"
+                  title={t({
+                    id: "hero.social.github",
+                    comment: "Tooltip for GitHub social link"
+                  })`GitHub`}
                   className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 hover:bg-slate-800 transition-all"
                 >
                   <Github className="w-4 h-4" />
@@ -203,14 +238,20 @@ export const Hero: React.FC<HeroProps> = ({
                   href={profile.linkedin}
                   target="_blank"
                   rel="noreferrer"
-                  title="LinkedIn"
+                  title={t({
+                    id: "hero.social.linkedin",
+                    comment: "Tooltip for LinkedIn social link"
+                  })`LinkedIn`}
                   className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-indigo-400 hover:border-indigo-500/40 hover:bg-slate-800 transition-all"
                 >
                   <Linkedin className="w-4 h-4" />
                 </a>
                 <a
                   href={`mailto:${profile.email}`}
-                  title="Email"
+                  title={t({
+                    id: "hero.social.email",
+                    comment: "Tooltip for email contact link"
+                  })`Email`}
                   className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-emerald-400 hover:border-emerald-500/40 hover:bg-slate-800 transition-all"
                 >
                   <Mail className="w-4 h-4" />
@@ -236,50 +277,96 @@ export const Hero: React.FC<HeroProps> = ({
                     <span className="w-3 h-3 rounded-full bg-rose-500/80 inline-block" />
                     <span className="w-3 h-3 rounded-full bg-amber-500/80 inline-block" />
                     <span className="w-3 h-3 rounded-full bg-emerald-500/80 inline-block" />
-                    <span className="text-xs font-mono text-slate-400 ml-2">developer.config.ts</span>
+                    <span className="text-xs font-mono text-slate-400 ml-2">
+                      <Trans id="hero.code.fileName" comment="Filename in code preview">
+                        developer.config.ts
+                      </Trans>
+                    </span>
                   </div>
                   <div className="flex items-center gap-1.5 px-2 py-0.5 rounded text-[11px] font-mono bg-indigo-950/60 text-indigo-300 border border-indigo-800/40">
                     <Sparkles className="w-3 h-3 text-indigo-400" />
-                    <span>v2.4 LTS</span>
+                    <Trans id="hero.code.version" comment="Version badge in code preview">
+                      v2.4 LTS
+                    </Trans>
                   </div>
                 </div>
 
                 {/* Simulated Code Architecture Block */}
                 <div className="font-mono text-xs space-y-2.5 leading-relaxed bg-slate-950/70 p-4 rounded-xl border border-slate-800/70">
                   <div>
-                    <span className="text-purple-400">const</span>{' '}
-                    <span className="text-indigo-300">developer</span> = &#123;
+                    <span className="text-purple-400">
+                      <Trans id="hero.code.const" comment="Const keyword in code">
+                        const
+                      </Trans>
+                    </span>{' '}
+                    <span className="text-indigo-300">
+                      <Trans id="hero.code.developer" comment="Developer variable name in code">
+                        developer
+                      </Trans>
+                    </span> = &#123;
                   </div>
                   <div className="pl-4 space-y-1 text-slate-300">
                     <div>
-                      <span className="text-slate-400">name:</span>{' '}
+                      <span className="text-slate-400">
+                        <Trans id="hero.code.name" comment="Name property in code">
+                          name:
+                        </Trans>
+                      </span>{' '}
                       <span className="text-emerald-300">'{profile.name}'</span>,
                     </div>
                     <div>
-                      <span className="text-slate-400">role:</span>{' '}
-                      <span className="text-emerald-300">'Fullstack Specialist'</span>,
+                      <span className="text-slate-400">
+                        <Trans id="hero.code.role" comment="Role property in code">
+                          role:
+                        </Trans>
+                      </span>{' '}
+                      <span className="text-emerald-300">
+                        <Trans id="hero.code.roleValue" comment="Role value in code">
+                          'Fullstack Specialist'
+                        </Trans>
+                      </span>,
                     </div>
                     <div>
-                      <span className="text-slate-400">location:</span>{' '}
+                      <span className="text-slate-400">
+                        <Trans id="hero.code.location" comment="Location property in code">
+                          location:
+                        </Trans>
+                      </span>{' '}
                       <span className="text-emerald-300">'{profile.location}'</span>,
                     </div>
                     <div>
-                      <span className="text-slate-400">frontend:</span> [
+                      <span className="text-slate-400">
+                        <Trans id="hero.code.frontend" comment="Frontend property in code">
+                          frontend:
+                        </Trans>
+                      </span> [
                       <span className="text-amber-300">'React'</span>,{' '}
                       <span className="text-amber-300">'Next.js'</span>,{' '}
                       <span className="text-amber-300">'TS'</span>,{' '}
                       <span className="text-amber-300">'Tailwind'</span>],
                     </div>
                     <div>
-                      <span className="text-slate-400">backend:</span> [
+                      <span className="text-slate-400">
+                        <Trans id="hero.code.backend" comment="Backend property in code">
+                          backend:
+                        </Trans>
+                      </span> [
                       <span className="text-amber-300">'Node'</span>,{' '}
                       <span className="text-amber-300">'NestJS'</span>,{' '}
                       <span className="text-amber-300">'Postgres'</span>,{' '}
                       <span className="text-amber-300">'Docker'</span>],
                     </div>
                     <div>
-                      <span className="text-slate-400">status:</span>{' '}
-                      <span className="text-cyan-300">'Ready for Impact 🚀'</span>
+                      <span className="text-slate-400">
+                        <Trans id="hero.code.status" comment="Status property in code">
+                          status:
+                        </Trans>
+                      </span>{' '}
+                      <span className="text-cyan-300">
+                        <Trans id="hero.code.statusValue" comment="Status value in code">
+                          'Ready for Impact 🚀'
+                        </Trans>
+                      </span>
                     </div>
                   </div>
                   <div>&#125;;</div>
@@ -292,8 +379,16 @@ export const Hero: React.FC<HeroProps> = ({
                       <Server className="w-4 h-4" />
                     </div>
                     <div>
-                      <p className="text-[11px] text-slate-400">APIs & Backend</p>
-                      <p className="text-xs font-semibold text-slate-200">Resilient</p>
+                      <p className="text-[11px] text-slate-400">
+                        <Trans id="hero.micro.apis" comment="Label for APIs & Backend micro highlight">
+                          APIs & Backend
+                        </Trans>
+                      </p>
+                      <p className="text-xs font-semibold text-slate-200">
+                        <Trans id="hero.micro.resilient" comment="Resilient status for backend">
+                          Resilient
+                        </Trans>
+                      </p>
                     </div>
                   </div>
 
@@ -302,8 +397,16 @@ export const Hero: React.FC<HeroProps> = ({
                       <Layers className="w-4 h-4" />
                     </div>
                     <div>
-                      <p className="text-[11px] text-slate-400">UI / UX</p>
-                      <p className="text-xs font-semibold text-slate-200">High Performance</p>
+                      <p className="text-[11px] text-slate-400">
+                        <Trans id="hero.micro.uiux" comment="Label for UI/UX micro highlight">
+                          UI / UX
+                        </Trans>
+                      </p>
+                      <p className="text-xs font-semibold text-slate-200">
+                        <Trans id="hero.micro.highPerformance" comment="High Performance status for UI/UX">
+                          High Performance
+                        </Trans>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -321,7 +424,9 @@ export const Hero: React.FC<HeroProps> = ({
               +{profile.stats.yearsOfExperience}
             </p>
             <p className="text-xs sm:text-sm text-slate-400 mt-1 font-medium">
-              Years of Experience
+              <Trans id="hero.stats.years" comment="Label for years of experience stat">
+                Years of Experience
+              </Trans>
             </p>
           </div>
 
@@ -330,7 +435,9 @@ export const Hero: React.FC<HeroProps> = ({
               +{profile.stats.projectsCompleted}
             </p>
             <p className="text-xs sm:text-sm text-slate-400 mt-1 font-medium">
-              Projects Shipped
+              <Trans id="hero.stats.projects" comment="Label for projects completed stat">
+                Projects Shipped
+              </Trans>
             </p>
           </div>
 
@@ -339,7 +446,9 @@ export const Hero: React.FC<HeroProps> = ({
               +{profile.stats.githubContributions}
             </p>
             <p className="text-xs sm:text-sm text-slate-400 mt-1 font-medium">
-              Git Contributions
+              <Trans id="hero.stats.contributions" comment="Label for GitHub contributions stat">
+                Git Contributions
+              </Trans>
             </p>
           </div>
 
@@ -348,7 +457,9 @@ export const Hero: React.FC<HeroProps> = ({
               {profile.stats.clientSatisfaction}%
             </p>
             <p className="text-xs sm:text-sm text-slate-400 mt-1 font-medium">
-              Client Satisfaction
+              <Trans id="hero.stats.satisfaction" comment="Label for client satisfaction stat">
+                Client Satisfaction
+              </Trans>
             </p>
           </div>
         </div>

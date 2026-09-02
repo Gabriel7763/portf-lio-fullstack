@@ -11,6 +11,8 @@ import {
   Zap 
 } from 'lucide-react';
 import { UserProfile } from '../types';
+import { Trans } from '@lingui/react/macro';
+import { t } from '@lingui/core/macro';
 
 interface AboutProps {
   profile: UserProfile;
@@ -21,36 +23,78 @@ export const About: React.FC<AboutProps> = ({ profile }) => {
     {
       icon: Code2,
       color: 'text-sky-400 bg-sky-500/10 border-sky-500/20',
-      title: 'Modern Frontend',
-      desc: 'Deep mastery of React, Next.js 15, TypeScript, state management, and accessible Design Systems.'
+      title: t({
+        id: "about.pillars.frontend.title",
+        comment: "Title for Modern Frontend engineering pillar"
+      })`Modern Frontend`,
+      desc: t({
+        id: "about.pillars.frontend.description",
+        comment: "Description of Modern Frontend expertise including React, Next.js, TypeScript and Design Systems"
+      })`Deep mastery of React, Next.js 15, TypeScript, state management, and accessible Design Systems.`
     },
     {
       icon: Server,
       color: 'text-emerald-400 bg-emerald-500/10 border-emerald-500/20',
-      title: 'Resilient Backend',
-      desc: 'Robust REST/GraphQL APIs and microservices in Node.js, NestJS, Go, and Python built for scale.'
+      title: t({
+        id: "about.pillars.backend.title",
+        comment: "Title for Resilient Backend engineering pillar"
+      })`Resilient Backend`,
+      desc: t({
+        id: "about.pillars.backend.description",
+        comment: "Description of Backend expertise including REST/GraphQL APIs, microservices, Node.js, NestJS, Go and Python"
+      })`Robust REST/GraphQL APIs and microservices in Node.js, NestJS, Go, and Python built for scale.`
     },
     {
       icon: Database,
       color: 'text-indigo-400 bg-indigo-500/10 border-indigo-500/20',
-      title: 'Databases & Caching',
-      desc: 'Advanced relational modeling (PostgreSQL), NoSQL (MongoDB), and high-throughput Redis caching.'
+      title: t({
+        id: "about.pillars.databases.title",
+        comment: "Title for Databases & Caching engineering pillar"
+      })`Databases & Caching`,
+      desc: t({
+        id: "about.pillars.databases.description",
+        comment: "Description of Database expertise including PostgreSQL, MongoDB, and Redis caching"
+      })`Advanced relational modeling (PostgreSQL), NoSQL (MongoDB), and high-throughput Redis caching.`
     },
     {
       icon: Cloud,
       color: 'text-amber-400 bg-amber-500/10 border-amber-500/20',
-      title: 'Cloud & DevOps',
-      desc: 'Containerization with Docker, Kubernetes, AWS cloud architectures, and automated CI/CD pipelines.'
+      title: t({
+        id: "about.pillars.cloud.title",
+        comment: "Title for Cloud & DevOps engineering pillar"
+      })`Cloud & DevOps`,
+      desc: t({
+        id: "about.pillars.cloud.description",
+        comment: "Description of Cloud expertise including Docker, Kubernetes, AWS, and CI/CD pipelines"
+      })`Containerization with Docker, Kubernetes, AWS cloud architectures, and automated CI/CD pipelines.`
     }
   ];
 
   const strengths = [
-    'Clean Code, SOLID & Scalable Design Patterns',
-    'Automated Testing (Unit, Integration & E2E)',
-    'Event-Driven Microservices & Queues',
-    'Core Web Vitals & Frontend Performance 95+',
-    'Security-First Mindset (OWASP & PCI-DSS)',
-    'Technical Leadership & Cross-Functional Team Mentorship'
+    t({
+      id: "about.strengths.cleanCode",
+      comment: "Engineering strength about Clean Code and SOLID principles"
+    })`Clean Code, SOLID & Scalable Design Patterns`,
+    t({
+      id: "about.strengths.testing",
+      comment: "Engineering strength about Automated Testing"
+    })`Automated Testing (Unit, Integration & E2E)`,
+    t({
+      id: "about.strengths.microservices",
+      comment: "Engineering strength about Event-Driven Microservices"
+    })`Event-Driven Microservices & Queues`,
+    t({
+      id: "about.strengths.performance",
+      comment: "Engineering strength about Core Web Vitals and Frontend Performance"
+    })`Core Web Vitals & Frontend Performance 95+`,
+    t({
+      id: "about.strengths.security",
+      comment: "Engineering strength about Security-First mindset"
+    })`Security-First Mindset (OWASP & PCI-DSS)`,
+    t({
+      id: "about.strengths.leadership",
+      comment: "Engineering strength about Technical Leadership and Mentorship"
+    })`Technical Leadership & Cross-Functional Team Mentorship`
   ];
 
   return (
@@ -64,10 +108,14 @@ export const About: React.FC<AboutProps> = ({ profile }) => {
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium text-indigo-400 bg-indigo-950/60 border border-indigo-800/40">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Engineering Pillars</span>
+            <Trans id="about.badge" comment="Badge label for engineering pillars section">
+              Engineering Pillars
+            </Trans>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            About Me & Engineering Focus
+            <Trans id="about.title" comment="Main title for About Me section">
+              About Me & Engineering Focus
+            </Trans>
           </h2>
           <p className="text-slate-400 text-base sm:text-lg">
             {profile.subtitle}
@@ -89,7 +137,9 @@ export const About: React.FC<AboutProps> = ({ profile }) => {
             <div className="pt-4 space-y-3">
               <h3 className="text-sm font-mono uppercase tracking-wider text-slate-200 font-semibold flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-emerald-400" />
-                <span>Core Engineering Standards</span>
+                <Trans id="about.strengths.title" comment="Title for Core Engineering Standards section">
+                  Core Engineering Standards
+                </Trans>
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
                 {strengths.map((strength, idx) => (
@@ -109,41 +159,69 @@ export const About: React.FC<AboutProps> = ({ profile }) => {
               <div className="flex items-center justify-between border-b border-slate-800 pb-4">
                 <div className="flex items-center gap-2 font-mono text-sm font-semibold text-slate-200">
                   <Terminal className="w-4 h-4 text-indigo-400" />
-                  <span>core_strengths.json</span>
+                  <Trans id="about.strengths.jsonLabel" comment="Label for core strengths JSON file display">
+                    core_strengths.json
+                  </Trans>
                 </div>
                 <span className="text-xs px-2 py-0.5 rounded bg-emerald-950/80 text-emerald-300 border border-emerald-800/40">
-                  Production Ready
+                  <Trans id="about.strengths.productionReady" comment="Production Ready badge">
+                    Production Ready
+                  </Trans>
                 </span>
               </div>
 
               <div className="space-y-4">
                 <div className="flex items-center justify-between text-xs font-mono text-slate-400">
-                  <span>Software Architecture</span>
-                  <span className="text-indigo-300">Clean Arch / DDD</span>
+                  <Trans id="about.skills.architecture.label" comment="Label for Software Architecture skill">
+                    Software Architecture
+                  </Trans>
+                  <span className="text-indigo-300">
+                    <Trans id="about.skills.architecture.value" comment="Value for Software Architecture skill">
+                      Clean Arch / DDD
+                    </Trans>
+                  </span>
                 </div>
                 <div className="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
                   <div className="h-full bg-indigo-500 rounded-full w-[95%]" />
                 </div>
 
                 <div className="flex items-center justify-between text-xs font-mono text-slate-400">
-                  <span>Frontend Performance</span>
-                  <span className="text-sky-300">Core Web Vitals 95+</span>
+                  <Trans id="about.skills.frontendPerformance.label" comment="Label for Frontend Performance skill">
+                    Frontend Performance
+                  </Trans>
+                  <span className="text-sky-300">
+                    <Trans id="about.skills.frontendPerformance.value" comment="Value for Frontend Performance skill">
+                      Core Web Vitals 95+
+                    </Trans>
+                  </span>
                 </div>
                 <div className="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
                   <div className="h-full bg-sky-500 rounded-full w-[98%]" />
                 </div>
 
                 <div className="flex items-center justify-between text-xs font-mono text-slate-400">
-                  <span>Backend Resilience</span>
-                  <span className="text-emerald-300">High Throughput</span>
+                  <Trans id="about.skills.backendResilience.label" comment="Label for Backend Resilience skill">
+                    Backend Resilience
+                  </Trans>
+                  <span className="text-emerald-300">
+                    <Trans id="about.skills.backendResilience.value" comment="Value for Backend Resilience skill">
+                      High Throughput
+                    </Trans>
+                  </span>
                 </div>
                 <div className="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
                   <div className="h-full bg-emerald-500 rounded-full w-[92%]" />
                 </div>
 
                 <div className="flex items-center justify-between text-xs font-mono text-slate-400">
-                  <span>Cloud & Containerization</span>
-                  <span className="text-amber-300">Docker & K8s</span>
+                  <Trans id="about.skills.cloud.label" comment="Label for Cloud & Containerization skill">
+                    Cloud & Containerization
+                  </Trans>
+                  <span className="text-amber-300">
+                    <Trans id="about.skills.cloud.value" comment="Value for Cloud & Containerization skill">
+                      Docker & K8s
+                    </Trans>
+                  </span>
                 </div>
                 <div className="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
                   <div className="h-full bg-amber-500 rounded-full w-[88%]" />
@@ -153,9 +231,15 @@ export const About: React.FC<AboutProps> = ({ profile }) => {
               <div className="pt-2 border-t border-slate-800 text-xs text-slate-400 flex items-center justify-between">
                 <span className="flex items-center gap-1.5 text-slate-300">
                   <Zap className="w-3.5 h-3.5 text-amber-400" />
-                  <span>Zero Tech Debt Mindset</span>
+                  <Trans id="about.strengths.zeroTechDebt" comment="Zero Tech Debt Mindset label">
+                    Zero Tech Debt Mindset
+                  </Trans>
                 </span>
-                <span className="font-mono text-indigo-400 font-medium">100% Type-Safe</span>
+                <span className="font-mono text-indigo-400 font-medium">
+                  <Trans id="about.strengths.typeSafe" comment="Type-safe badge">
+                    100% Type-Safe
+                  </Trans>
+                </span>
               </div>
 
             </div>

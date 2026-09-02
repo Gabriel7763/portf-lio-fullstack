@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Code2, ArrowUpRight, UserCog } from 'lucide-react';
 import { UserProfile } from '../types';
+import { Trans } from '@lingui/react/macro';
+import { t } from '@lingui/core/macro';
 
 interface NavbarProps {
   profile: UserProfile;
@@ -40,11 +42,26 @@ export const Navbar: React.FC<NavbarProps> = ({
   }, []);
 
   const navLinks = [
-    { id: 'about', label: 'About' },
-    { id: 'skills', label: 'Tech Stack' },
-    { id: 'projects', label: 'Projects' },
-    { id: 'experience', label: 'Experience' },
-    { id: 'contact', label: 'Contact' }
+    { id: 'about', label: t({
+      id: "navbar.links.about",
+      comment: "Navigation link label for About section"
+    })`About` },
+    { id: 'skills', label: t({
+      id: "navbar.links.techStack",
+      comment: "Navigation link label for Tech Stack section"
+    })`Tech Stack` },
+    { id: 'projects', label: t({
+      id: "navbar.links.projects",
+      comment: "Navigation link label for Projects section"
+    })`Projects` },
+    { id: 'experience', label: t({
+      id: "navbar.links.experience",
+      comment: "Navigation link label for Experience section"
+    })`Experience` },
+    { id: 'contact', label: t({
+      id: "navbar.links.contact",
+      comment: "Navigation link label for Contact section"
+    })`Contact` }
   ];
 
   const scrollTo = (id: string) => {
@@ -120,7 +137,10 @@ export const Navbar: React.FC<NavbarProps> = ({
           <button
             id="nav-customize-btn"
             onClick={onOpenCustomize}
-            title="Customize Profile"
+            title={t({
+              id: "navbar.customize.tooltip",
+              comment: "Tooltip for customize profile button"
+            })`Customize Profile`}
             className="p-2 text-slate-300 bg-slate-900/80 border border-slate-800 rounded-xl hover:border-slate-700 hover:text-indigo-300 transition-colors cursor-pointer"
           >
             <UserCog className="w-4 h-4" />
@@ -132,7 +152,9 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => scrollTo('contact')}
             className="group flex items-center gap-1.5 px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-indigo-600 to-indigo-500 hover:from-indigo-500 hover:to-indigo-600 rounded-xl shadow-sm shadow-indigo-500/25 hover:shadow-indigo-500/40 transition-all cursor-pointer"
           >
-            <span>Let's Talk</span>
+            <Trans id="navbar.cta.letsTalk" comment="Button text for hiring CTA">
+              Let's Talk
+            </Trans>
             <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </button>
         </div>
@@ -142,7 +164,10 @@ export const Navbar: React.FC<NavbarProps> = ({
           <button
             id="mobile-customize-header-btn"
             onClick={onOpenCustomize}
-            aria-label="Customize Profile"
+            aria-label={t({
+              id: "navbar.mobile.customize.aria",
+              comment: "Aria label for mobile customize profile button"
+            })`Customize Profile`}
             className="p-2 text-slate-300 bg-slate-900 border border-slate-800 rounded-lg hover:text-white"
           >
             <UserCog className="w-4 h-4" />
@@ -151,7 +176,10 @@ export const Navbar: React.FC<NavbarProps> = ({
           <button
             id="mobile-menu-btn"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Open menu"
+            aria-label={t({
+              id: "navbar.mobile.menu.aria",
+              comment: "Aria label for mobile menu toggle button"
+            })`Toggle menu`}
             className="p-2 text-slate-300 bg-slate-900 border border-slate-800 rounded-lg hover:text-white"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -192,7 +220,9 @@ export const Navbar: React.FC<NavbarProps> = ({
               className="flex items-center justify-center gap-2 w-full py-2.5 text-xs font-medium rounded-lg bg-slate-900 text-slate-300 border border-slate-800"
             >
               <UserCog className="w-4 h-4 text-indigo-400" />
-              <span>Customize Profile</span>
+              <Trans id="navbar.mobile.customize.label" comment="Button label for customize profile in mobile menu">
+                Customize Profile
+              </Trans>
             </button>
 
             <button
@@ -200,7 +230,9 @@ export const Navbar: React.FC<NavbarProps> = ({
               onClick={() => scrollTo('contact')}
               className="flex items-center justify-center gap-2 w-full py-2.5 text-sm font-semibold rounded-lg bg-indigo-600 text-white shadow-md shadow-indigo-600/30"
             >
-              <span>Let's Talk</span>
+              <Trans id="navbar.mobile.cta.letsTalk" comment="Button text for hiring CTA in mobile menu">
+                Let's Talk
+              </Trans>
               <ArrowUpRight className="w-4 h-4" />
             </button>
           </div>

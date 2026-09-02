@@ -14,6 +14,8 @@ import {
   Code2
 } from 'lucide-react';
 import { Project } from '../types';
+import { Trans } from '@lingui/react/macro';
+import { t } from '@lingui/core/macro';
 
 interface ProjectModalProps {
   project: Project | null;
@@ -44,7 +46,10 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
           id="close-project-modal-btn"
           onClick={onClose}
           className="absolute top-5 right-5 p-2 rounded-full bg-slate-800/80 text-slate-400 hover:text-white hover:bg-slate-700 transition-colors cursor-pointer"
-          aria-label="Close"
+          aria-label={t({
+            id: "projectModal.close.aria",
+            comment: "Aria label for close modal button"
+          })`Close`}
         >
           <X className="w-5 h-5" />
         </button>
@@ -58,7 +63,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
             {project.featured && (
               <span className="text-xs font-mono px-2.5 py-0.5 rounded-full bg-amber-950/80 text-amber-300 border border-amber-800/40 flex items-center gap-1">
                 <Sparkles className="w-3 h-3 text-amber-400" />
-                Featured
+                <Trans id="projectModal.featured" comment="Featured badge label">
+                  Featured
+                </Trans>
               </span>
             )}
           </div>
@@ -74,7 +81,11 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
         <div className="relative rounded-2xl overflow-hidden border border-slate-800 aspect-video max-h-80 w-full group">
           <img
             src={project.image}
-            alt={project.title}
+            alt={t({
+              id: "projectModal.image.alt",
+              comment: "Alt text for project preview image, {title} is the project name",
+              title: project.title
+            })`Screenshot of {title} project`}
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           />
@@ -96,7 +107,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
         <div className="space-y-3">
           <h3 className="text-sm font-mono uppercase tracking-wider text-indigo-400 font-semibold flex items-center gap-2">
             <Code2 className="w-4 h-4" />
-            <span>Product & System Overview</span>
+            <Trans id="projectModal.overview.title" comment="Title for product and system overview section">
+              Product & System Overview
+            </Trans>
           </h3>
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
             {project.fullDescription}
@@ -107,7 +120,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
         <div className="p-4 sm:p-5 rounded-2xl bg-slate-950/60 border border-slate-800 space-y-2.5">
           <h3 className="text-xs font-mono uppercase tracking-wider text-emerald-400 font-semibold flex items-center gap-2">
             <BarChart3 className="w-4 h-4" />
-            <span>Production Metrics & Impact</span>
+            <Trans id="projectModal.metrics.title" comment="Title for production metrics section">
+              Production Metrics & Impact
+            </Trans>
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
             {project.metrics.map((metric, idx) => (
@@ -123,14 +138,18 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
         <div className="space-y-3">
           <h3 className="text-sm font-mono uppercase tracking-wider text-slate-200 font-semibold flex items-center gap-2">
             <Layers className="w-4 h-4 text-indigo-400" />
-            <span>Architectural Breakdown</span>
+            <Trans id="projectModal.architecture.title" comment="Title for architectural breakdown section">
+              Architectural Breakdown
+            </Trans>
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="p-4 rounded-xl bg-slate-950/40 border border-slate-800 space-y-1.5">
               <div className="flex items-center gap-2 text-xs font-mono text-sky-400 font-semibold">
                 <Code2 className="w-3.5 h-3.5" />
-                <span>Frontend Layer</span>
+                <Trans id="projectModal.architecture.frontend" comment="Label for frontend layer in architecture">
+                  Frontend Layer
+                </Trans>
               </div>
               <p className="text-xs text-slate-300">{project.architecture.frontend}</p>
             </div>
@@ -138,7 +157,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
             <div className="p-4 rounded-xl bg-slate-950/40 border border-slate-800 space-y-1.5">
               <div className="flex items-center gap-2 text-xs font-mono text-emerald-400 font-semibold">
                 <Server className="w-3.5 h-3.5" />
-                <span>Backend & APIs</span>
+                <Trans id="projectModal.architecture.backend" comment="Label for backend layer in architecture">
+                  Backend & APIs
+                </Trans>
               </div>
               <p className="text-xs text-slate-300">{project.architecture.backend}</p>
             </div>
@@ -146,7 +167,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
             <div className="p-4 rounded-xl bg-slate-950/40 border border-slate-800 space-y-1.5">
               <div className="flex items-center gap-2 text-xs font-mono text-indigo-400 font-semibold">
                 <Database className="w-3.5 h-3.5" />
-                <span>Database & Cache</span>
+                <Trans id="projectModal.architecture.database" comment="Label for database layer in architecture">
+                  Database & Cache
+                </Trans>
               </div>
               <p className="text-xs text-slate-300">{project.architecture.database}</p>
             </div>
@@ -154,7 +177,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
             <div className="p-4 rounded-xl bg-slate-950/40 border border-slate-800 space-y-1.5">
               <div className="flex items-center gap-2 text-xs font-mono text-amber-400 font-semibold">
                 <Cloud className="w-3.5 h-3.5" />
-                <span>DevOps & Infrastructure</span>
+                <Trans id="projectModal.architecture.devops" comment="Label for devops layer in architecture">
+                  DevOps & Infrastructure
+                </Trans>
               </div>
               <p className="text-xs text-slate-300">{project.architecture.devops}</p>
             </div>
@@ -166,7 +191,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
           <div className="p-4 rounded-xl bg-rose-950/20 border border-rose-900/30 space-y-2">
             <div className="flex items-center gap-2 text-xs font-mono text-rose-400 font-semibold">
               <AlertCircle className="w-4 h-4" />
-              <span>Technical Challenge</span>
+              <Trans id="projectModal.challenge.title" comment="Title for technical challenge section">
+                Technical Challenge
+              </Trans>
             </div>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
               {project.challenges}
@@ -176,7 +203,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
           <div className="p-4 rounded-xl bg-emerald-950/20 border border-emerald-900/30 space-y-2">
             <div className="flex items-center gap-2 text-xs font-mono text-emerald-400 font-semibold">
               <CheckCircle2 className="w-4 h-4" />
-              <span>Engineered Solution</span>
+              <Trans id="projectModal.solution.title" comment="Title for engineered solution section">
+                Engineered Solution
+              </Trans>
             </div>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
               {project.solution}
@@ -193,7 +222,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
               rel="noreferrer"
               className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-500 shadow-md shadow-indigo-600/30 transition-all cursor-pointer"
             >
-              <span>Visit Live Demo</span>
+              <Trans id="projectModal.actions.liveDemo" comment="Button text for live demo link">
+                Visit Live Demo
+              </Trans>
               <ExternalLink className="w-4 h-4" />
             </a>
 
@@ -204,7 +235,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
               className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium text-slate-300 bg-slate-800 hover:bg-slate-700 hover:text-white transition-all cursor-pointer"
             >
               <Github className="w-4 h-4" />
-              <span>View Source</span>
+              <Trans id="projectModal.actions.viewSource" comment="Button text for view source link">
+                View Source
+              </Trans>
             </a>
           </div>
 
@@ -212,7 +245,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
             onClick={onClose}
             className="px-5 py-2.5 rounded-xl text-sm font-medium text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer"
           >
-            Close
+            <Trans id="projectModal.actions.close" comment="Button text to close modal">
+              Close
+            </Trans>
           </button>
         </div>
 
