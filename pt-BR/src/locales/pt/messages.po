@@ -8,7 +8,7 @@ msgstr ""
 "Language: pt\n"
 "Project-Id-Version: portfolio-fullstack\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-09-02 20:31\n"
+"PO-Revision-Date: 2026-09-02 21:33\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese, Brazilian\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -76,11 +76,11 @@ msgstr "about.title"
 
 #: src/components/About.tsx:54
 msgid "Advanced relational modeling (PostgreSQL), NoSQL (MongoDB), and high-throughput Redis caching."
-msgstr "Advanced relational modeling (PostgreSQL), NoSQL (MongoDB), and high-throughput Redis caching."
+msgstr "Modelagem relacional avançada (PostgreSQL), NoSQL (MongoDB), e cache com Redis de alto rendimento."
 
 #: src/components/Projects.tsx:38
 msgid "AI & Cloud"
-msgstr "IA & Nuvem"
+msgstr "IA & Cloud"
 
 #: src/components/Projects.tsx:22
 msgid "All Projects"
@@ -764,110 +764,110 @@ msgstr "projectModal.challenge.title"
 
 #: src/components/About.tsx:94
 msgid "Technical Leadership & Cross-Functional Team Mentorship"
-msgstr ""
+msgstr "Liderança Técnica e Mentoria Multifuncional"
 
 #. Badge label for technical repertoire section
 #. js-lingui-explicit-id
 #: src/components/TechStack.tsx:128
 msgid "techstack.badge"
-msgstr ""
+msgstr "techstack.badge"
 
 #. Thank you message after form submission
 #. js-lingui-explicit-id
 #: src/components/Contact.tsx:241
 msgid "contact.form.success.message"
-msgstr ""
+msgstr "contact.form.success.message"
 
 #: src/components/Navbar.tsx:179
 msgid "Toggle menu"
-msgstr ""
+msgstr "Alternar menu"
 
 #: src/components/TechStack.tsx:83
 msgid "Tools & Quality"
-msgstr ""
+msgstr "Ferramentas e Qualidade"
 
 #. Total technologies badge, {count} is the number
 #. js-lingui-explicit-id
 #. placeholder {0}: skillsData.length
 #: src/components/TechStack.tsx:311
 msgid "techstack.totalBadge"
-msgstr ""
+msgstr "techstack.totalBadge"
 
 #. Typical response time badge text
 #. js-lingui-explicit-id
 #: src/components/Contact.tsx:190
 msgid "contact.directChannels.responseTime"
-msgstr ""
+msgstr "contact.directChannels.responseTime"
 
 #. Label for UI/UX micro highlight
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:401
 msgid "hero.micro.uiux"
-msgstr ""
+msgstr "hero.micro.uiux"
 
 #. Label for ecosystem tags
 #. js-lingui-explicit-id
 #: src/components/TechStack.tsx:286
 msgid "techstack.skill.usedWith"
-msgstr ""
+msgstr "techstack.skill.usedWith"
 
 #. Version badge in code preview
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:288
 msgid "hero.code.version"
-msgstr ""
+msgstr "hero.code.version"
 
 #. Button text to view featured projects
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:184
 msgid "hero.cta.projects"
-msgstr ""
+msgstr "hero.cta.projects"
 
 #. Button text for view source link
 #. js-lingui-explicit-id
 #: src/components/ProjectModal.tsx:238
 msgid "projectModal.actions.viewSource"
-msgstr ""
+msgstr "projectModal.actions.viewSource"
 
 #. Button text for live demo link
 #. js-lingui-explicit-id
 #: src/components/ProjectModal.tsx:225
 msgid "projectModal.actions.liveDemo"
-msgstr ""
+msgstr "projectModal.actions.liveDemo"
 
 #. Title for what colleagues and leaders say section
 #. js-lingui-explicit-id
 #: src/components/Experience.tsx:231
 msgid "experience.testimonials.title"
-msgstr ""
+msgstr "experience.testimonials.title"
 
 #. Label for WhatsApp/direct call channel
 #. js-lingui-explicit-id
 #: src/components/Contact.tsx:153
 msgid "contact.directChannels.whatsapp.label"
-msgstr ""
+msgstr "contact.directChannels.whatsapp.label"
 
 #. Tab label for work experience section
 #. js-lingui-explicit-id
 #: src/components/Experience.tsx:58
 msgid "experience.tab.work"
-msgstr ""
+msgstr "experience.tab.work"
 
 #. Label for years of experience stat
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:427
 msgid "hero.stats.years"
-msgstr ""
+msgstr "hero.stats.years"
 
 #. Label for name input field
 #. js-lingui-explicit-id
 #: src/components/Contact.tsx:267
 msgid "contact.form.name.label"
-msgstr ""
+msgstr "contact.form.name.label"
 
 #. Zero Tech Debt Mindset label
 #. js-lingui-explicit-id
 #: src/components/About.tsx:234
 msgid "about.strengths.zeroTechDebt"
-msgstr ""
+msgstr "about.strengths.zeroTechDebt"
 
