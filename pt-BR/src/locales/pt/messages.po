@@ -8,7 +8,7 @@ msgstr ""
 "Language: pt\n"
 "Project-Id-Version: portfolio-fullstack\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-09-02 16:55\n"
+"PO-Revision-Date: 2026-09-02 17:58\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese, Brazilian\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -22,27 +22,27 @@ msgstr ""
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:324
 msgid "hero.code.roleValue"
-msgstr ""
+msgstr "hero.code.roleValue"
 
 #. Status value in code
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:366
 msgid "hero.code.statusValue"
-msgstr ""
+msgstr "hero.code.statusValue"
 
 #. Location and timezone info, UTC-3 is Brazil timezone
 #. js-lingui-explicit-id
 #. placeholder {0}: profile.location
 #: src/components/Contact.tsx:177
 msgid "contact.directChannels.location.value"
-msgstr ""
+msgstr "contact.directChannels.location.value"
 
 #. Experience years badge for a skill, {years} is the number
 #. js-lingui-explicit-id
 #. placeholder {0}: skill.experienceYears
 #: src/components/TechStack.tsx:248
 msgid "techstack.skill.experience"
-msgstr ""
+msgstr "techstack.skill.experience"
 
 #. Copyright notice in footer, {year} will be replaced with current year
 #. js-lingui-explicit-id
@@ -50,240 +50,240 @@ msgstr ""
 #. placeholder {1}: profile.name
 #: src/components/Footer.tsx:89
 msgid "footer.copyright"
-msgstr ""
+msgstr "footer.copyright"
 
 #. Type-safe badge
 #. js-lingui-explicit-id
 #: src/components/About.tsx:239
 msgid "about.strengths.typeSafe"
-msgstr ""
+msgstr "about.strengths.typeSafe"
 
 #. Subtitle describing the skills section
 #. js-lingui-explicit-id
 #: src/components/TechStack.tsx:138
 msgid "techstack.subtitle"
-msgstr ""
+msgstr "techstack.subtitle"
 
 #: src/components/Navbar.tsx:45
 msgid "About"
-msgstr ""
+msgstr "Sobre"
 
 #. Main title for About Me section
 #. js-lingui-explicit-id
 #: src/components/About.tsx:116
 msgid "about.title"
-msgstr ""
+msgstr "about.title"
 
 #: src/components/About.tsx:54
 msgid "Advanced relational modeling (PostgreSQL), NoSQL (MongoDB), and high-throughput Redis caching."
-msgstr ""
+msgstr "Advanced relational modeling (PostgreSQL), NoSQL (MongoDB), and high-throughput Redis caching."
 
 #: src/components/Projects.tsx:38
 msgid "AI & Cloud"
-msgstr ""
+msgstr "IA & Nuvem"
 
 #: src/components/Projects.tsx:22
 msgid "All Projects"
-msgstr ""
+msgstr "Todos os projetos"
 
 #: src/components/TechStack.tsx:63
 msgid "All Technologies"
-msgstr ""
+msgstr "Todas as tecnologias"
 
 #. Label for APIs & Backend micro highlight
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:383
 msgid "hero.micro.apis"
-msgstr ""
+msgstr "hero.micro.apis"
 
 #. Title for architectural breakdown section
 #. js-lingui-explicit-id
 #: src/components/ProjectModal.tsx:141
 msgid "projectModal.architecture.title"
-msgstr ""
+msgstr "projectModal.architecture.title"
 
 #. Button text to view architecture details
 #. js-lingui-explicit-id
 #: src/components/Projects.tsx:195
 msgid "projects.card.details"
-msgstr ""
+msgstr "projects.card.details"
 
 #: src/components/About.tsx:78
 msgid "Automated Testing (Unit, Integration & E2E)"
-msgstr ""
+msgstr "Teste Automatizado (Unidade, Integração e E2E)"
 
 #. Status badge showing availability for new projects
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:120
 msgid "hero.availability"
-msgstr ""
+msgstr "hero.availability"
 
 #: src/components/Experience.tsx:255
 msgid "Avatar of {name}"
-msgstr ""
+msgstr "Avatar de {name}"
 
 #. Button text to scroll back to top of page
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx:78
 msgid "footer.backToTop"
-msgstr ""
+msgstr "footer.backToTop"
 
 #: src/components/TechStack.tsx:71
 msgid "Backend"
-msgstr ""
+msgstr "Backend"
 
 #. Label for backend layer in architecture
 #. js-lingui-explicit-id
 #: src/components/ProjectModal.tsx:160
 msgid "projectModal.architecture.backend"
-msgstr ""
+msgstr "projectModal.architecture.backend"
 
 #: src/components/Projects.tsx:34
 msgid "Backend & APIs"
-msgstr ""
+msgstr "Backend & APIs"
 
 #. Label for Backend Resilience skill
 #. js-lingui-explicit-id
 #: src/components/About.tsx:203
 msgid "about.skills.backendResilience.label"
-msgstr ""
+msgstr "about.skills.backendResilience.label"
 
 #. Backend property in code
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:350
 msgid "hero.code.backend"
-msgstr ""
+msgstr "hero.code.backend"
 
 #. Technologies used in the project, shown in footer
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx:98
 msgid "footer.techStack"
-msgstr ""
+msgstr "footer.techStack"
 
 #. Badge label for career and education section
 #. js-lingui-explicit-id
 #: src/components/Experience.tsx:29
 msgid "experience.badge"
-msgstr ""
+msgstr "experience.badge"
 
 #. Button text to view career history
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:211
 msgid "hero.cta.career"
-msgstr ""
+msgstr "hero.cta.career"
 
 #. Value for Software Architecture skill
 #. js-lingui-explicit-id
 #: src/components/About.tsx:179
 msgid "about.skills.architecture.value"
-msgstr ""
+msgstr "about.skills.architecture.value"
 
 #: src/components/About.tsx:74
 msgid "Clean Code, SOLID & Scalable Design Patterns"
-msgstr ""
+msgstr "Código Limpo, SOLID e Padrões de Design Escaláveis"
 
 #: src/components/TechStack.tsx:185
 msgid "Clear search"
-msgstr ""
+msgstr "Limpar pesquisa"
 
 #. Label for client satisfaction stat
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:460
 msgid "hero.stats.satisfaction"
-msgstr ""
+msgstr "hero.stats.satisfaction"
 
 #: src/components/ProjectModal.tsx:49
 msgid "Close"
-msgstr ""
+msgstr "Fechar"
 
 #. Button text to close modal
 #. js-lingui-explicit-id
 #: src/components/ProjectModal.tsx:248
 msgid "projectModal.actions.close"
-msgstr ""
+msgstr "projectModal.actions.close"
 
 #. Label for Cloud & Containerization skill
 #. js-lingui-explicit-id
 #: src/components/About.tsx:217
 msgid "about.skills.cloud.label"
-msgstr ""
+msgstr "about.skills.cloud.label"
 
 #: src/components/About.tsx:62
 msgid "Cloud & DevOps"
-msgstr ""
+msgstr "Nuvem e DevOps"
 
 #. Label before social media links
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:220
 msgid "hero.connect"
-msgstr ""
+msgstr "hero.connect"
 
 #. Const keyword in code
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:298
 msgid "hero.code.const"
-msgstr ""
+msgstr "hero.code.const"
 
 #: src/components/Navbar.tsx:61
 msgid "Contact"
-msgstr ""
+msgstr "Contato"
 
 #: src/components/About.tsx:66
 msgid "Containerization with Docker, Kubernetes, AWS cloud architectures, and automated CI/CD pipelines."
-msgstr ""
+msgstr "Containerização com Docker, Kubernetes, arquiteturas AWS em nuvem e pipelines CI/CD automatizadas."
 
 #: src/components/Contact.tsx:130
 msgid "Copy email"
-msgstr ""
+msgstr "Copiar email"
 
 #. Title for Core Engineering Standards section
 #. js-lingui-explicit-id
 #: src/components/About.tsx:140
 msgid "about.strengths.title"
-msgstr ""
+msgstr "about.strengths.title"
 
 #. Label for core tech stack section
 #. js-lingui-explicit-id
 #: src/components/Hero.tsx:161
 msgid "hero.coreStack"
-msgstr ""
+msgstr "hero.coreStack"
 
 #: src/components/About.tsx:86
 msgid "Core Web Vitals & Frontend Performance 95+"
-msgstr ""
+msgstr "Core Web Vitals & Desempenho de Frontend 95+"
 
 #. Value for Frontend Performance skill
 #. js-lingui-explicit-id
 #: src/components/About.tsx:193
 msgid "about.skills.frontendPerformance.value"
-msgstr ""
+msgstr "about.skills.frontendPerformance.value"
 
 #. Label for core strengths JSON file display
 #. js-lingui-explicit-id
 #: src/components/About.tsx:162
 msgid "about.strengths.jsonLabel"
-msgstr ""
+msgstr "about.strengths.jsonLabel"
 
 #: src/components/Navbar.tsx:140
 #: src/components/Navbar.tsx:167
 msgid "Customize Profile"
-msgstr ""
+msgstr "Personalizar Perfil"
 
 #. Button label for customize profile in mobile menu
 #. js-lingui-explicit-id
 #: src/components/Navbar.tsx:223
 msgid "navbar.mobile.customize.label"
-msgstr ""
+msgstr "navbar.mobile.customize.label"
 
 #. Label for database layer in architecture
 #. js-lingui-explicit-id
 #: src/components/ProjectModal.tsx:170
 msgid "projectModal.architecture.database"
-msgstr ""
+msgstr "projectModal.architecture.database"
 
 #: src/components/TechStack.tsx:75
 msgid "Database & Cache"
-msgstr ""
+msgstr "Banco de Dados e Cache"
 
 #: src/components/About.tsx:50
 msgid "Databases & Caching"
