@@ -8,7 +8,7 @@ msgstr ""
 "Language: pt\n"
 "Project-Id-Version: portfolio-fullstack\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-09-02 22:43\n"
+"PO-Revision-Date: 2026-09-03 15:11\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese, Brazilian\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -230,11 +230,11 @@ msgstr "Contato"
 
 #: src/components/About.tsx:66
 msgid "Containerization with Docker, Kubernetes, AWS cloud architectures, and automated CI/CD pipelines."
-msgstr "Containerização com Docker, Kubernetes, arquiteturas AWS em nuvem e pipelines CI/CD automatizadas."
+msgstr "Containerização com Docker, Kubernetes, arquiteturas AWS em nuvem e pipelines CI/CD automatizados."
 
 #: src/components/Contact.tsx:130
 msgid "Copy email"
-msgstr "Copiar email"
+msgstr "Copiar e-mail"
 
 #. Title for Core Engineering Standards section
 #. js-lingui-explicit-id
@@ -329,7 +329,7 @@ msgstr "contact.directChannels.email.label"
 
 #: src/components/Hero.tsx:45
 msgid "Distributed Systems Specialist"
-msgstr "Distributed Systems Specialist"
+msgstr "Especialista em Sistemas Distribuídos"
 
 #. Value for Cloud & Containerization skill
 #. js-lingui-explicit-id
@@ -380,7 +380,7 @@ msgstr "about.badge"
 
 #: src/components/About.tsx:82
 msgid "Event-Driven Microservices & Queues"
-msgstr "Microserviços e Filas Orientados a Evento"
+msgstr "Microsserviços Orientados a Eventos e Filas"
 
 #: src/components/Navbar.tsx:57
 msgid "Experience"
@@ -468,7 +468,7 @@ msgstr "hero.greeting"
 
 #: src/components/Contact.tsx:339
 msgid "Hi Lucas, let's talk about our new cloud architecture..."
-msgstr "Oi, Lucas, vamos falar sobre nossa nova arquitetura em nuvem..."
+msgstr "Olá, Lucas, vamos falar sobre nossa nova arquitetura em nuvem..."
 
 #. High Performance status for UI/UX
 #. js-lingui-explicit-id
@@ -571,7 +571,7 @@ msgstr "techstack.noResults"
 
 #: src/components/Hero.tsx:41
 msgid "Node.js & Cloud Developer"
-msgstr "Node.js e Cloud Developer"
+msgstr "Node.js e Desenvolvedor Cloud"
 
 #. Description inviting to schedule a quick call
 #. js-lingui-explicit-id
@@ -669,7 +669,7 @@ msgstr "Backend Resiliente"
 
 #: src/components/About.tsx:42
 msgid "Robust REST/GraphQL APIs and microservices in Node.js, NestJS, Go, and Python built for scale."
-msgstr "APIs REST/GraphQL robustas e microserviços em Node.js, NestJS, Go e Python construídos para escalar."
+msgstr "APIs REST/GraphQL robustas e microsserviços em Node.js, NestJS, Go e Python construídos para escalar."
 
 #. Role property in code
 #. js-lingui-explicit-id
@@ -680,7 +680,7 @@ msgstr "hero.code.role"
 #: src/components/ProjectModal.tsx:84
 #: src/components/Projects.tsx:117
 msgid "Screenshot of {title} project"
-msgstr "Screenshot do projeto {title}"
+msgstr "Captura de tela do projeto {title}"
 
 #: src/components/TechStack.tsx:175
 msgid "Search technologies, libraries..."
@@ -738,7 +738,7 @@ msgstr "about.skills.architecture.label"
 
 #: src/components/Projects.tsx:205
 msgid "Source Code"
-msgstr "Código fonte"
+msgstr "Código-fonte"
 
 #. Status property in code
 #. js-lingui-explicit-id
