@@ -1,0 +1,873 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-09-01 18:12-0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: pt\n"
+"Project-Id-Version: portfolio-fullstack\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-09-03 15:11\n"
+"Last-Translator: \n"
+"Language-Team: Portuguese, Brazilian\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: portfolio-fullstack\n"
+"X-Crowdin-Project-ID: 925401\n"
+"X-Crowdin-Language: pt-BR\n"
+"X-Crowdin-File: /main/src/locales/pt/messages.po\n"
+"X-Crowdin-File-ID: 13\n"
+
+#. Role value in code
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:324
+msgid "hero.code.roleValue"
+msgstr "hero.code.roleValue"
+
+#. Status value in code
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:366
+msgid "hero.code.statusValue"
+msgstr "hero.code.statusValue"
+
+#. Location and timezone info, UTC-3 is Brazil timezone
+#. js-lingui-explicit-id
+#. placeholder {0}: profile.location
+#: src/components/Contact.tsx:177
+msgid "contact.directChannels.location.value"
+msgstr "contact.directChannels.location.value"
+
+#. Experience years badge for a skill, {years} is the number
+#. js-lingui-explicit-id
+#. placeholder {0}: skill.experienceYears
+#: src/components/TechStack.tsx:248
+msgid "techstack.skill.experience"
+msgstr "techstack.skill.experience"
+
+#. Copyright notice in footer, {year} will be replaced with current year
+#. js-lingui-explicit-id
+#. placeholder {0}: new Date().getFullYear()
+#. placeholder {1}: profile.name
+#: src/components/Footer.tsx:89
+msgid "footer.copyright"
+msgstr "footer.copyright"
+
+#. Type-safe badge
+#. js-lingui-explicit-id
+#: src/components/About.tsx:239
+msgid "about.strengths.typeSafe"
+msgstr "about.strengths.typeSafe"
+
+#. Subtitle describing the skills section
+#. js-lingui-explicit-id
+#: src/components/TechStack.tsx:138
+msgid "techstack.subtitle"
+msgstr "techstack.subtitle"
+
+#: src/components/Navbar.tsx:45
+msgid "About"
+msgstr "Sobre"
+
+#. Main title for About Me section
+#. js-lingui-explicit-id
+#: src/components/About.tsx:116
+msgid "about.title"
+msgstr "about.title"
+
+#: src/components/About.tsx:54
+msgid "Advanced relational modeling (PostgreSQL), NoSQL (MongoDB), and high-throughput Redis caching."
+msgstr "Modelagem relacional avançada (PostgreSQL), NoSQL (MongoDB), e cache com Redis de alto rendimento."
+
+#: src/components/Projects.tsx:38
+msgid "AI & Cloud"
+msgstr "IA & Cloud"
+
+#: src/components/Projects.tsx:22
+msgid "All Projects"
+msgstr "Todos os projetos"
+
+#: src/components/TechStack.tsx:63
+msgid "All Technologies"
+msgstr "Todas as tecnologias"
+
+#. Label for APIs & Backend micro highlight
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:383
+msgid "hero.micro.apis"
+msgstr "hero.micro.apis"
+
+#. Title for architectural breakdown section
+#. js-lingui-explicit-id
+#: src/components/ProjectModal.tsx:141
+msgid "projectModal.architecture.title"
+msgstr "projectModal.architecture.title"
+
+#. Button text to view architecture details
+#. js-lingui-explicit-id
+#: src/components/Projects.tsx:195
+msgid "projects.card.details"
+msgstr "projects.card.details"
+
+#: src/components/About.tsx:78
+msgid "Automated Testing (Unit, Integration & E2E)"
+msgstr "Teste Automatizado (Unidade, Integração e E2E)"
+
+#. Status badge showing availability for new projects
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:120
+msgid "hero.availability"
+msgstr "hero.availability"
+
+#: src/components/Experience.tsx:255
+msgid "Avatar of {name}"
+msgstr "Avatar de {name}"
+
+#. Button text to scroll back to top of page
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx:78
+msgid "footer.backToTop"
+msgstr "footer.backToTop"
+
+#: src/components/TechStack.tsx:71
+msgid "Backend"
+msgstr "Backend"
+
+#. Label for backend layer in architecture
+#. js-lingui-explicit-id
+#: src/components/ProjectModal.tsx:160
+msgid "projectModal.architecture.backend"
+msgstr "projectModal.architecture.backend"
+
+#: src/components/Projects.tsx:34
+msgid "Backend & APIs"
+msgstr "Backend & APIs"
+
+#. Label for Backend Resilience skill
+#. js-lingui-explicit-id
+#: src/components/About.tsx:203
+msgid "about.skills.backendResilience.label"
+msgstr "about.skills.backendResilience.label"
+
+#. Backend property in code
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:350
+msgid "hero.code.backend"
+msgstr "hero.code.backend"
+
+#. Technologies used in the project, shown in footer
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx:98
+msgid "footer.techStack"
+msgstr "footer.techStack"
+
+#. Badge label for career and education section
+#. js-lingui-explicit-id
+#: src/components/Experience.tsx:29
+msgid "experience.badge"
+msgstr "experience.badge"
+
+#. Button text to view career history
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:211
+msgid "hero.cta.career"
+msgstr "hero.cta.career"
+
+#. Value for Software Architecture skill
+#. js-lingui-explicit-id
+#: src/components/About.tsx:179
+msgid "about.skills.architecture.value"
+msgstr "about.skills.architecture.value"
+
+#: src/components/About.tsx:74
+msgid "Clean Code, SOLID & Scalable Design Patterns"
+msgstr "Código Limpo, SOLID e Padrões de Design Escaláveis"
+
+#: src/components/TechStack.tsx:185
+msgid "Clear search"
+msgstr "Limpar pesquisa"
+
+#. Label for client satisfaction stat
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:460
+msgid "hero.stats.satisfaction"
+msgstr "hero.stats.satisfaction"
+
+#: src/components/ProjectModal.tsx:49
+msgid "Close"
+msgstr "Fechar"
+
+#. Button text to close modal
+#. js-lingui-explicit-id
+#: src/components/ProjectModal.tsx:248
+msgid "projectModal.actions.close"
+msgstr "projectModal.actions.close"
+
+#. Label for Cloud & Containerization skill
+#. js-lingui-explicit-id
+#: src/components/About.tsx:217
+msgid "about.skills.cloud.label"
+msgstr "about.skills.cloud.label"
+
+#: src/components/About.tsx:62
+msgid "Cloud & DevOps"
+msgstr "Cloud e DevOps"
+
+#. Label before social media links
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:220
+msgid "hero.connect"
+msgstr "hero.connect"
+
+#. Const keyword in code
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:298
+msgid "hero.code.const"
+msgstr "hero.code.const"
+
+#: src/components/Navbar.tsx:61
+msgid "Contact"
+msgstr "Contato"
+
+#: src/components/About.tsx:66
+msgid "Containerization with Docker, Kubernetes, AWS cloud architectures, and automated CI/CD pipelines."
+msgstr "Containerização com Docker, Kubernetes, arquiteturas AWS em nuvem e pipelines CI/CD automatizados."
+
+#: src/components/Contact.tsx:130
+msgid "Copy email"
+msgstr "Copiar e-mail"
+
+#. Title for Core Engineering Standards section
+#. js-lingui-explicit-id
+#: src/components/About.tsx:140
+msgid "about.strengths.title"
+msgstr "about.strengths.title"
+
+#. Label for core tech stack section
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:161
+msgid "hero.coreStack"
+msgstr "hero.coreStack"
+
+#: src/components/About.tsx:86
+msgid "Core Web Vitals & Frontend Performance 95+"
+msgstr "Core Web Vitals & Desempenho de Frontend 95+"
+
+#. Value for Frontend Performance skill
+#. js-lingui-explicit-id
+#: src/components/About.tsx:193
+msgid "about.skills.frontendPerformance.value"
+msgstr "about.skills.frontendPerformance.value"
+
+#. Label for core strengths JSON file display
+#. js-lingui-explicit-id
+#: src/components/About.tsx:162
+msgid "about.strengths.jsonLabel"
+msgstr "about.strengths.jsonLabel"
+
+#: src/components/Navbar.tsx:140
+#: src/components/Navbar.tsx:167
+msgid "Customize Profile"
+msgstr "Personalizar Perfil"
+
+#. Button label for customize profile in mobile menu
+#. js-lingui-explicit-id
+#: src/components/Navbar.tsx:223
+msgid "navbar.mobile.customize.label"
+msgstr "navbar.mobile.customize.label"
+
+#. Label for database layer in architecture
+#. js-lingui-explicit-id
+#: src/components/ProjectModal.tsx:170
+msgid "projectModal.architecture.database"
+msgstr "projectModal.architecture.database"
+
+#: src/components/TechStack.tsx:75
+msgid "Database & Cache"
+msgstr "Banco de Dados e Cache"
+
+#: src/components/About.tsx:50
+msgid "Databases & Caching"
+msgstr "Bancos de dados & Caching"
+
+#: src/components/About.tsx:30
+msgid "Deep mastery of React, Next.js 15, TypeScript, state management, and accessible Design Systems."
+msgstr "Domínio profundo de React, Next.js 15, TypeScript, gerenciamento de estado e sistemas de design acessíveis."
+
+#. Developer variable name in code
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:303
+msgid "hero.code.developer"
+msgstr "hero.code.developer"
+
+#. Filename in code preview
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:281
+msgid "hero.code.fileName"
+msgstr "hero.code.fileName"
+
+#: src/components/TechStack.tsx:79
+msgid "DevOps & Cloud"
+msgstr "DevOps & Cloud"
+
+#. Label for devops layer in architecture
+#. js-lingui-explicit-id
+#: src/components/ProjectModal.tsx:180
+msgid "projectModal.architecture.devops"
+msgstr "projectModal.architecture.devops"
+
+#. Title for direct contact channels section
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:104
+msgid "contact.directChannels.title"
+msgstr "contact.directChannels.title"
+
+#. Label for direct email channel
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:117
+msgid "contact.directChannels.email.label"
+msgstr "contact.directChannels.email.label"
+
+#: src/components/Hero.tsx:45
+msgid "Distributed Systems Specialist"
+msgstr "Especialista em Sistemas Distribuídos"
+
+#. Value for Cloud & Containerization skill
+#. js-lingui-explicit-id
+#: src/components/About.tsx:221
+msgid "about.skills.cloud.value"
+msgstr "about.skills.cloud.value"
+
+#. Tab label for education and certifications section
+#. js-lingui-explicit-id
+#: src/components/Experience.tsx:73
+msgid "experience.tab.education"
+msgstr "experience.tab.education"
+
+#: src/components/Footer.tsx:62
+#: src/components/Hero.tsx:251
+msgid "Email"
+msgstr "E-mail"
+
+#. Label for email input field
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:288
+msgid "contact.form.email.label"
+msgstr "contact.form.email.label"
+
+#. Subtitle describing endorsements section
+#. js-lingui-explicit-id
+#: src/components/Experience.tsx:236
+msgid "experience.testimonials.subtitle"
+msgstr "experience.testimonials.subtitle"
+
+#. Title for engineered solution section
+#. js-lingui-explicit-id
+#: src/components/ProjectModal.tsx:206
+msgid "projectModal.solution.title"
+msgstr "projectModal.solution.title"
+
+#. Subtitle describing the section content
+#. js-lingui-explicit-id
+#: src/components/Experience.tsx:39
+msgid "experience.subtitle"
+msgstr "experience.subtitle"
+
+#. Badge label for engineering pillars section
+#. js-lingui-explicit-id
+#: src/components/About.tsx:111
+msgid "about.badge"
+msgstr "about.badge"
+
+#: src/components/About.tsx:82
+msgid "Event-Driven Microservices & Queues"
+msgstr "Microsserviços Orientados a Eventos e Filas"
+
+#: src/components/Navbar.tsx:57
+msgid "Experience"
+msgstr "Experiência"
+
+#. Featured badge label
+#. js-lingui-explicit-id
+#: src/components/ProjectModal.tsx:66
+msgid "projectModal.featured"
+msgstr "projectModal.featured"
+
+#. Featured badge label
+#. js-lingui-explicit-id
+#: src/components/Projects.tsx:138
+msgid "projects.featured"
+msgstr "projects.featured"
+
+#. Badge label for featured portfolio section
+#. js-lingui-explicit-id
+#: src/components/Projects.tsx:65
+msgid "projects.badge"
+msgstr "projects.badge"
+
+#: src/components/Projects.tsx:30
+#: src/components/TechStack.tsx:67
+msgid "Frontend"
+msgstr "Frontend"
+
+#. Label for frontend layer in architecture
+#. js-lingui-explicit-id
+#: src/components/ProjectModal.tsx:150
+msgid "projectModal.architecture.frontend"
+msgstr "projectModal.architecture.frontend"
+
+#. Label for Frontend Performance skill
+#. js-lingui-explicit-id
+#: src/components/About.tsx:189
+msgid "about.skills.frontendPerformance.label"
+msgstr "about.skills.frontendPerformance.label"
+
+#. Frontend property in code
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:339
+msgid "hero.code.frontend"
+msgstr "hero.code.frontend"
+
+#: src/components/Projects.tsx:26
+msgid "Fullstack"
+msgstr "Fullstack"
+
+#. Button text to get in touch
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:196
+msgid "hero.cta.contact"
+msgstr "hero.cta.contact"
+
+#. Main title for contact section
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:84
+msgid "contact.title"
+msgstr "contact.title"
+
+#. Label for GitHub contributions stat
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:449
+msgid "hero.stats.contributions"
+msgstr "hero.stats.contributions"
+
+#: src/components/Footer.tsx:38
+#: src/components/Hero.tsx:229
+msgid "GitHub"
+msgstr "GitHub"
+
+#. Subtitle describing how to reach out for projects and roles
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:89
+msgid "contact.subtitle"
+msgstr "contact.subtitle"
+
+#. Greeting text before the name
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:128
+msgid "hero.greeting"
+msgstr "hero.greeting"
+
+#: src/components/Contact.tsx:339
+msgid "Hi Lucas, let's talk about our new cloud architecture..."
+msgstr "Olá, Lucas, vamos falar sobre nossa nova arquitetura em nuvem..."
+
+#. High Performance status for UI/UX
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:406
+msgid "hero.micro.highPerformance"
+msgstr "hero.micro.highPerformance"
+
+#. Value for Backend Resilience skill
+#. js-lingui-explicit-id
+#: src/components/About.tsx:207
+msgid "about.skills.backendResilience.value"
+msgstr "about.skills.backendResilience.value"
+
+#. Prefix before the dynamic role text
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:142
+msgid "hero.iam"
+msgstr "hero.iam"
+
+#: src/components/Contact.tsx:277
+msgid "John Doe"
+msgstr "João da Silva"
+
+#: src/components/Contact.tsx:298
+msgid "john@example.com"
+msgstr "john@example.com"
+
+#. Label for key accomplishments section
+#. js-lingui-explicit-id
+#: src/components/Experience.tsx:143
+msgid "experience.achievements.label"
+msgstr "experience.achievements.label"
+
+#. Badge label for contact section, inviting collaboration
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:79
+msgid "contact.badge"
+msgstr "contact.badge"
+
+#. Button text for hiring CTA
+#. js-lingui-explicit-id
+#: src/components/Navbar.tsx:155
+msgid "navbar.cta.letsTalk"
+msgstr "navbar.cta.letsTalk"
+
+#. Button text for hiring CTA in mobile menu
+#. js-lingui-explicit-id
+#: src/components/Navbar.tsx:233
+msgid "navbar.mobile.cta.letsTalk"
+msgstr "navbar.mobile.cta.letsTalk"
+
+#: src/components/Footer.tsx:51
+#: src/components/Hero.tsx:241
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: src/components/Projects.tsx:217
+msgid "Live Demo"
+msgstr "Demonstração ao vivo"
+
+#. Label for location and timezone information
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:172
+msgid "contact.directChannels.location.label"
+msgstr "contact.directChannels.location.label"
+
+#. Location property in code
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:331
+msgid "hero.code.location"
+msgstr "hero.code.location"
+
+#. Label for message textarea
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:329
+msgid "contact.form.message.label"
+msgstr "contact.form.message.label"
+
+#. Success title after message submission
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:236
+msgid "contact.form.success.title"
+msgstr "contact.form.success.title"
+
+#: src/components/About.tsx:26
+msgid "Modern Frontend"
+msgstr "Frontend Moderno"
+
+#. Name property in code
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:311
+msgid "hero.code.name"
+msgstr "hero.code.name"
+
+#. Message when no technologies match search
+#. js-lingui-explicit-id
+#: src/components/TechStack.tsx:202
+msgid "techstack.noResults"
+msgstr "techstack.noResults"
+
+#: src/components/Hero.tsx:41
+msgid "Node.js & Cloud Developer"
+msgstr "Node.js e Desenvolvedor Cloud"
+
+#. Description inviting to schedule a quick call
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:208
+msgid "contact.scheduleMeeting.description"
+msgstr "contact.scheduleMeeting.description"
+
+#. Title for product and system overview section
+#. js-lingui-explicit-id
+#: src/components/ProjectModal.tsx:110
+msgid "projectModal.overview.title"
+msgstr "projectModal.overview.title"
+
+#. Title for production metrics section
+#. js-lingui-explicit-id
+#: src/components/ProjectModal.tsx:123
+msgid "projectModal.metrics.title"
+msgstr "projectModal.metrics.title"
+
+#. Production Ready badge
+#. js-lingui-explicit-id
+#: src/components/About.tsx:167
+msgid "about.strengths.productionReady"
+msgstr "about.strengths.productionReady"
+
+#. Subtitle describing the projects section
+#. js-lingui-explicit-id
+#: src/components/Projects.tsx:75
+msgid "projects.subtitle"
+msgstr "projects.subtitle"
+
+#. Main title for professional trajectory section
+#. js-lingui-explicit-id
+#: src/components/Experience.tsx:34
+msgid "experience.title"
+msgstr "experience.title"
+
+#. Label for proficiency level
+#. js-lingui-explicit-id
+#: src/components/TechStack.tsx:269
+msgid "techstack.skill.proficiency"
+msgstr "techstack.skill.proficiency"
+
+#: src/components/Contact.tsx:318
+msgid "Project Inquiry / Engineering Role"
+msgstr "Inquérito do Projeto / Função de Engenharia"
+
+#: src/components/Navbar.tsx:53
+msgid "Projects"
+msgstr "Projetos"
+
+#. Label for projects completed stat
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:438
+msgid "hero.stats.projects"
+msgstr "hero.stats.projects"
+
+#. Badge for quick meeting invitation
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:203
+msgid "contact.scheduleMeeting.badge"
+msgstr "contact.scheduleMeeting.badge"
+
+#: src/components/Hero.tsx:37
+msgid "React & Next.js Architect"
+msgstr "Arquiteto de React & Next.js"
+
+#. Badge label for recommendations section
+#. js-lingui-explicit-id
+#: src/components/Experience.tsx:226
+msgid "experience.testimonials.badge"
+msgstr "experience.testimonials.badge"
+
+#. Button text to request a call
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:216
+msgid "contact.scheduleMeeting.button"
+msgstr "contact.scheduleMeeting.button"
+
+#. Button text to reset filters
+#. js-lingui-explicit-id
+#: src/components/TechStack.tsx:213
+msgid "techstack.resetFilters"
+msgstr "techstack.resetFilters"
+
+#. Resilient status for backend
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:388
+msgid "hero.micro.resilient"
+msgstr "hero.micro.resilient"
+
+#: src/components/About.tsx:38
+msgid "Resilient Backend"
+msgstr "Backend Resiliente"
+
+#: src/components/About.tsx:42
+msgid "Robust REST/GraphQL APIs and microservices in Node.js, NestJS, Go, and Python built for scale."
+msgstr "APIs REST/GraphQL robustas e microsserviços em Node.js, NestJS, Go e Python construídos para escalar."
+
+#. Role property in code
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:319
+msgid "hero.code.role"
+msgstr "hero.code.role"
+
+#: src/components/ProjectModal.tsx:84
+#: src/components/Projects.tsx:117
+msgid "Screenshot of {title} project"
+msgstr "Captura de tela do projeto {title}"
+
+#: src/components/TechStack.tsx:175
+msgid "Search technologies, libraries..."
+msgstr "Pesquisar tecnologias, bibliotecas..."
+
+#: src/components/About.tsx:90
+msgid "Security-First Mindset (OWASP & PCI-DSS)"
+msgstr "Mentalidade Segurança-Primeiro (OWASP & PCI-DSS)"
+
+#. Main title for projects section
+#. js-lingui-explicit-id
+#: src/components/Projects.tsx:70
+msgid "projects.title"
+msgstr "projects.title"
+
+#. Title for contact form
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:258
+msgid "contact.form.title"
+msgstr "contact.form.title"
+
+#. Button to send another message
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:250
+msgid "contact.form.success.resetButton"
+msgstr "contact.form.success.resetButton"
+
+#. Submit button text for contact form
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:363
+msgid "contact.form.submit"
+msgstr "contact.form.submit"
+
+#. Loading text when sending message
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:356
+msgid "contact.form.submitting"
+msgstr "contact.form.submitting"
+
+#: src/components/Hero.tsx:33
+msgid "Senior Fullstack Engineer"
+msgstr "Engenheiro Fullstack Sênior"
+
+#. Main title for skills section
+#. js-lingui-explicit-id
+#: src/components/TechStack.tsx:133
+msgid "techstack.title"
+msgstr "techstack.title"
+
+#. Label for Software Architecture skill
+#. js-lingui-explicit-id
+#: src/components/About.tsx:175
+msgid "about.skills.architecture.label"
+msgstr "about.skills.architecture.label"
+
+#: src/components/Projects.tsx:205
+msgid "Source Code"
+msgstr "Código-fonte"
+
+#. Status property in code
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:361
+msgid "hero.code.status"
+msgstr "hero.code.status"
+
+#. Label for subject input field
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:310
+msgid "contact.form.subject.label"
+msgstr "contact.form.subject.label"
+
+#: src/components/Navbar.tsx:49
+msgid "Tech Stack"
+msgstr "Pilha Tecnológica"
+
+#. Title for technical challenge section
+#. js-lingui-explicit-id
+#: src/components/ProjectModal.tsx:194
+msgid "projectModal.challenge.title"
+msgstr "projectModal.challenge.title"
+
+#: src/components/About.tsx:94
+msgid "Technical Leadership & Cross-Functional Team Mentorship"
+msgstr "Liderança Técnica e Mentoria Multifuncional"
+
+#. Badge label for technical repertoire section
+#. js-lingui-explicit-id
+#: src/components/TechStack.tsx:128
+msgid "techstack.badge"
+msgstr "techstack.badge"
+
+#. Thank you message after form submission
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:241
+msgid "contact.form.success.message"
+msgstr "contact.form.success.message"
+
+#: src/components/Navbar.tsx:179
+msgid "Toggle menu"
+msgstr "Alternar menu"
+
+#: src/components/TechStack.tsx:83
+msgid "Tools & Quality"
+msgstr "Ferramentas e Qualidade"
+
+#. Total technologies badge, {count} is the number
+#. js-lingui-explicit-id
+#. placeholder {0}: skillsData.length
+#: src/components/TechStack.tsx:311
+msgid "techstack.totalBadge"
+msgstr "techstack.totalBadge"
+
+#. Typical response time badge text
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:190
+msgid "contact.directChannels.responseTime"
+msgstr "contact.directChannels.responseTime"
+
+#. Label for UI/UX micro highlight
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:401
+msgid "hero.micro.uiux"
+msgstr "hero.micro.uiux"
+
+#. Label for ecosystem tags
+#. js-lingui-explicit-id
+#: src/components/TechStack.tsx:286
+msgid "techstack.skill.usedWith"
+msgstr "techstack.skill.usedWith"
+
+#. Version badge in code preview
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:288
+msgid "hero.code.version"
+msgstr "hero.code.version"
+
+#. Button text to view featured projects
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:184
+msgid "hero.cta.projects"
+msgstr "hero.cta.projects"
+
+#. Button text for view source link
+#. js-lingui-explicit-id
+#: src/components/ProjectModal.tsx:238
+msgid "projectModal.actions.viewSource"
+msgstr "projectModal.actions.viewSource"
+
+#. Button text for live demo link
+#. js-lingui-explicit-id
+#: src/components/ProjectModal.tsx:225
+msgid "projectModal.actions.liveDemo"
+msgstr "projectModal.actions.liveDemo"
+
+#. Title for what colleagues and leaders say section
+#. js-lingui-explicit-id
+#: src/components/Experience.tsx:231
+msgid "experience.testimonials.title"
+msgstr "experience.testimonials.title"
+
+#. Label for WhatsApp/direct call channel
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:153
+msgid "contact.directChannels.whatsapp.label"
+msgstr "contact.directChannels.whatsapp.label"
+
+#. Tab label for work experience section
+#. js-lingui-explicit-id
+#: src/components/Experience.tsx:58
+msgid "experience.tab.work"
+msgstr "experience.tab.work"
+
+#. Label for years of experience stat
+#. js-lingui-explicit-id
+#: src/components/Hero.tsx:427
+msgid "hero.stats.years"
+msgstr "hero.stats.years"
+
+#. Label for name input field
+#. js-lingui-explicit-id
+#: src/components/Contact.tsx:267
+msgid "contact.form.name.label"
+msgstr "contact.form.name.label"
+
+#. Zero Tech Debt Mindset label
+#. js-lingui-explicit-id
+#: src/components/About.tsx:234
+msgid "about.strengths.zeroTechDebt"
+msgstr "about.strengths.zeroTechDebt"
+
